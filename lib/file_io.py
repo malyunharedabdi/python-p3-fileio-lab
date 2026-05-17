@@ -1,8 +1,17 @@
 def write_file(file_name, file_content):
-    pass
+    file = open(f"{file_name}.txt", "w")
+    file.write(file_content)
+    file.close()
+
 
 def append_file(file_name, append_content):
-    pass
+    file = open(f"{file_name}.txt", "a")
+    file.write(append_content)
+    file.close()
+
 
 def read_file(file_name):
-    pass
+    file = open(f"{file_name}.txt", "r")
+    content = file.read()
+    file.close()
+    return content
